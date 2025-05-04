@@ -1,0 +1,16 @@
+public class BinaryConverter {
+
+    public static String decimalToBinaryRecursive(int n) {
+        if (n == 0) {
+            return "";
+        }
+        return decimalToBinaryRecursive(n / 2) + (n % 2);
+    }
+
+    public static String convertRecursive(int n) {
+        if (n == 0) {
+            return "0";
+        }
+        return decimalToBinaryRecursive(n);
+    }
+}
